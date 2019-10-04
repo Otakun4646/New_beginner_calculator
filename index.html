@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+
+<html>
+	
+<head> 
+<meta name="viewport" content="width=device-width, initialscale=1">
+
+<link rel="stylesheet" href="js/jquery.mobile-1.4.5.css">
+
+<script src="js/jquery.js"></script>
+
+<script src="js/jquery.mobile-1.4.5.min.js"></script> 
+
+<script src="calculator.js" async></script>
+
+<script src="cordova.js"></script>
+
+	
+</head>
+
+<body>
+
+<!-- page01 -->
+<div data-role="page" id="pageone" data-theme="a">
+
+ <div data-role="header">
+ 
+ <h1>Simple calculator</h1>
+ 
+ <div data-role="navbar">
+<ul>
+ <li><a href="#pageone" class="ui-btn-active ui-icon-home ui-btn-icon-left ui-state-persist">Home</a></li>
+ <li><a href="#pagetwo" class="ui-btn ui-icon-grid ui-btn-icon-left">Calculator</a></li>
+ <li><a href="#pagethree" class="ui-btn ui-icon-info ui-btn-icon-left">Help</a></li>
+ </ul>
+</div>
+
+ 
+ </div>
+ 
+<div data-role="main" class="ui-content">
+
+ <p>This is a jQuery mobile exercise which provides the user with a calculatorfor basic mathematical operations.</p>
+ 
+ </div> 
+
+ <div data-role="footer"> 
+
+<h1>Homework</h1>
+
+
+
+
+ </div>
+ 
+ 
+ </div>
+ 
+ <!-- 2 -->
+<div data-role="page" id="pagetwo" data-theme="a">
+
+ <div data-role="header">
+ 
+ <h1>Simple calculator</h1>
+ 
+ <div data-role="navbar">
+<ul>
+ <li><a href="#pageone" class="ui-btn ui-icon-home ui-btn-icon-left">Home</a></li>
+ <li><a href="#pagetwo" class="ui-btn-active ui-state-persist ui-icon-grid ui-btn-icon-left">Calculator</a></li>
+ <li><a href="#pagethree" class="ui-btn ui-icon-info ui-btn-icon-left">Help</a></li>
+ </ul>
+</div>
+
+ </div>
+ 
+<div data-role="main" class="ui-content">
+
+ <input type="number" name="num1" id="num1" data-clear-btn="true">
+ 
+  <select name="Operations" id="Operations">
+  <option value="0" id="add" >+</option>
+  <option value="1" id="sub">-</option>
+  <option value="2" id="mul">*</option>
+  <option value="3" id="div">/</option>
+  </select>
+
+  <input type="number" name="num2" id="num2" data-clear-btn="true">
+
+  <div data-role="controlgroup" data-type="vertical">
+  <a href="#results" class="ui-btn" id="btnCalc">Calculate</a>
+  </div>
+  
+  </div>
+  
+  <div data-role="footer"> 
+
+<h1>Homework</h1>
+
+ 
+ </div> 
+ 
+ </div>
+ 
+ <!-- page03 -->
+<div data-role="page" id="pagethree" data-theme="a">
+
+ <div data-role="header">
+ 
+ <h1>Simple calculator</h1>
+ 
+ <div data-role="navbar">
+<ul>
+ <li><a href="#pageone" class="ui-btn ui-icon-home ui-btn-icon-left">Home</a></li>
+ <li><a href="#pagetwo" class="ui-btn ui-icon-grid ui-btn-icon-left">Calculator</a></li>
+ <li><a href="#pagethree" class="ui-btn-active ui-state-persist ui-icon-info ui-btn-icon-left">Help</a></li>
+ </ul>
+</div>
+ 
+ </div>
+ 
+
+<div data-role="main" class="ui-content">
+
+ <p>This is the help section and provides basic information about how to use the calculator.</p>
+ 
+<div data-role="controlgroup">
+ <a href="#pageinfo" class="ui-btn ui-icon-info ui-btn-icon-left">More Info</a>
+ </div>
+ 
+ </div> 
+
+ <div data-role="footer"> 
+
+<h1>Homework</h1>
+
+ </div>
+ 
+ 
+ </div>
+ 
+  <!-- pageResults -->
+<div data-role="page" id="results" data-theme="a">
+
+ <div data-role="header">
+ 
+ <h1>Results</h1>
+ 
+ <div data-role="navbar">
+<ul>
+ <li><a href="#pageone" class="ui-btn ui-icon-home ui-btn-icon-left">Home</a></li>
+ <li><a href="#pagetwo" class="ui-btn ui-icon-grid ui-btn-icon-left">Calculator</a></li>
+ <li><a href="#pagethree" class="ui-btn ui-icon-info ui-btn-icon-left">Help</a></li>
+ </ul>
+</div>
+
+</div>
+
+<div data-role="main" class="ui-content">
+
+<div id="calcResult">
+</div>
+ 
+ <div data-role="controlgroup" data-type="vertical">
+  <a  class="ui-btn ui-icon-back ui-btn-icon-left" data-rel="back">Back</a>
+  </div>
+ 
+ </div> 
+
+ <div data-role="footer"> 
+
+<h1>Homework</h1>
+
+ </div>
+ 
+ </div>
+ 
+  <!-- pageInfo02 -->
+ <div data-role="page" id="pageinfo" data-dialog="true" data-theme="a">
+
+ <div data-role="header">
+ 
+ <h1>More info</h1>
+ 
+ </div>
+
+<div data-role="main" class="ui-content">
+
+ <p>You have requested more information about the App!</p>
+ 
+ <div data-role="controlgroup">
+ <a href="#pageone" class="ui-btn ui-icon-back ui-btn-icon-left">Dismiss</a>
+ </div>
+ 
+ </div> 
+ 
+ 
+ </div>
+ 
+</body>
+</html>
